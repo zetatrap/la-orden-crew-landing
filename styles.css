@@ -1,0 +1,77 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  /* Título con desenfoque gaussiano */
+  .blur-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: blur-animation 2s infinite alternate;
+  }
+  
+  /* Animación del desenfoque */
+  @keyframes blur-animation {
+    0% {
+      filter: blur(2px);
+    }
+    100% {
+      filter: blur(0px);
+    }
+  }
+  
+  /* Contenedor del video */
+  .video-container {
+    margin-bottom: 20px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 560px;
+  }
+  
+  /* Botón animado */
+  .animated-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .animated-button:hover {
+    background-color: #0a74da;
+    transform: scale(1.1);
+  }
+  
+.contalogo{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
