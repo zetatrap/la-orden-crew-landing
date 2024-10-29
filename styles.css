@@ -6,7 +6,9 @@
   }
   
   body {
-    background-color: black;
+    background-image: url('fondo.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
@@ -20,24 +22,21 @@
   .container {
     width: 90%;
     max-width: 800px;
+    margin-top: 25px;
   }
   
   /* Título con desenfoque gaussiano */
   .blur-title {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    animation: blur-animation 2s infinite alternate;
+    color: white;
   }
   
-  /* Animación del desenfoque */
-  @keyframes blur-animation {
-    0% {
-      filter: blur(2px);
-    }
-    100% {
-      filter: blur(0px);
-    }
+  .blur-title:hover {
+    font-size: 3.2rem; /* Aumenta el tamaño del texto en un 20% */
+    text-shadow: 0 0 10px #fff, /* Agrega sombreado blanco con efecto de blur */
+                0 0 5px rgba(0, 0, 0, 0.2); /* Agrega sombreado gris para contraste */
   }
   
   /* Contenedor del video */
@@ -56,8 +55,8 @@
     display: inline-block;
     padding: 15px 30px;
     font-size: 1.2rem;
-    color: white;
-    background-color: #1e90ff;
+    color: rgb(0, 0, 0);
+    background-color: #f8f8f875;
     border: none;
     border-radius: 30px;
     text-decoration: none;
@@ -65,7 +64,7 @@
   }
   
   .animated-button:hover {
-    background-color: #0a74da;
+    background-color: #ffba3b;
     transform: scale(1.1);
   }
   
@@ -74,4 +73,22 @@
     justify-content: center;
     width: 500px;
     height: 500px;
+}
+
+
+.animated-button_paypal {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  background-color: #0329ff75;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-button_paypal:hover {
+  background-color: #1100ff;
+  transform: scale(1.1);
 }
