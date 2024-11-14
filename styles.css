@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('fondo.webp');
+  background-image: url('black.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -87,7 +87,7 @@ body {
 }
 
 .front {
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo claro */
+  background-color: rgba(255, 0, 0, 0.137); /* Fondo claro */
   color: #ffffff;
 
 }
@@ -100,14 +100,14 @@ body {
 
 .card-title {
   font-size: 1.5rem;
-  color: #ffa600;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .price {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  color: #000;
+  color: #1a9216;
 }
 
 .description {
@@ -152,6 +152,18 @@ a:hover {
   }
 }
 
+.membresia{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-shadow: 0 0 10px #fff, 0 0 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
 
+.mem{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 

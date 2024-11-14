@@ -12,8 +12,8 @@
 
   <!-- Sección de formulario -->
   <div class="form-container">
-    <h2 class="section-title">Formulario de Suscripción</h2>
-    <form class="subscription-form">
+    <h2 class="section-title">Formulario de Inscripcion</h2>
+    <form class="subscription-form" action="https://formspree.io/f/xdkozblz" method="POST">
       <div class="form-group">
         <label for="nombre">Nombre y Apellido</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -28,10 +28,38 @@
       </div>
       <div class="form-group">
         <label for="edad">Edad</label>
-        <input type="number" id="edad" name="edad" required>
+        <select name="edad" id="edad">
+          <option value="18-21">18-21</option>
+          <option value="21-30">21-30</option>
+          <option value="+30">+30</option>
+        </select>
       </div>
       <div class="form-group">
-        <label for="telefono">Número de Teléfono</label>
+        <label for="codigo-area">Codigo de Area</label>
+        <select id="codigo-area" name="codigo-area" required>
+          <option value="+54">+54(Argentina)</option>
+          <option value="+591">+591 (Bolivia)</option>
+          <option value="+56">+56 (Chile)</option>
+          <option value="+57">+57 (Colombia)</option>
+          <option value="+506">+506 (Costa Rica)</option>
+          <option value="+53">+53 (Cuba)</option>
+          <option value="+593">+593 (Ecuador)</option>
+          <option value="+503">+503 (El Salvador)</option>
+          <option value="+502">+502 (Guatemala)</option>
+          <option value="+504">+504 (Honduras)</option>
+          <option value="+52">+52 (México)</option>
+          <option value="+505">+505 (Nicaragua)</option>
+          <option value="+507">+507 (Panamá)</option>
+          <option value="+595">+595 (Paraguay)</option>
+          <option value="+51">+51 (Perú)</option>
+          <option value="+1">+1 (República Dominicana)</option>
+          <option value="+598">+598 (Uruguay)</option>
+          <option value="+58">+58 (Venezuela)</option>
+        </select>
+        
+      </div>
+      <div class="form-group">
+        <label for="telefono">Celular sin codigo de Area</label>
         <input type="tel" id="telefono" name="telefono" required>
       </div>
       <div class="form-group">
@@ -39,7 +67,7 @@
         <select id="sexo" name="sexo">
           <option value="masculino">Masculino</option>
           <option value="femenino">Femenino</option>
-          <option value="otro">Otro</option>
+          <option value="no binario">No Binario</option>
         </select>
       </div>
       <div class="form-group">
@@ -52,6 +80,13 @@
 
     <a href="index.html" class="back-btn">Volver al Inicio</a>
   </div>
+
+  <div class="confirmation-message" style="display: none;">
+    ¡Gracias por suscribirte a La Orden Crew! Nos pondremos en contacto contigo pronto.
+  </div>
+  
+  <script src="script.js"></script>
+
 
 </body>
 </html>
