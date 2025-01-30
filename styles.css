@@ -50,9 +50,10 @@ body {
 /* Estilos para las tarjetas de suscripción con efecto flip */
 .subscription-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 50px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .cardBox {
