@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>La Orden Crew</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="advertisement-banner">
-    <img src="templates/pubdi.png" alt="Publicidad" />
-  </div>
-  <br>
-  <br>
-  <br>
-  <h1 class="blur-title">𓂀La Orden Crew𓂀</h1>
-  <div class="container">
-    <!-- Video original centrado y responsive -->
-    <div class="video-container">
-      <video 
-      width="100%" 
-      height="315" 
-      src="templates/headvideonew.mp4" 
-      autoplay 
-      loop 
-      muted 
-      playsinline>
-        Tu navegador no soporta el elemento de video.
+  <header class="header">
+    <video autoplay muted loop class="header-video">
+      <source src="templates/headvideonew.mp4" type="video/mp4" />
+      Tu navegador no soporta la reproducción de videos.
     </video>
-    </div>
-<br>
+  </header>
 
+  <main class="main-content">
 
-<div class="membresia">
-  <p class="mem">|SERVIDOR DE DISCORD|</p>
-</div>
+    <!-- Intro -->
+    <section class="intro">
+      <h1>Bienvenido a La Orden Crew</h1>
+      <p>El mejor canal de musica latina 👽🥶 La Orden Crew👹
+Suscribete a La Orden Crew© y forma parte de una experiencia unica, no te quedes afuera del movimiento .
+La Orden Crew© 2022 todos los derechos reservados.</p>
+    </section>
 
-
-
-
-    <!-- Tarjetas de suscripción con efecto flip -->
-    <div class="subscription-cards">
-      <!-- Card 1: Suscripción Básica -->
-      <div class="cardBox">
-        <div class="card">
-          <div class="front">
-            <h2 class="card-title">DISCORD</h2>
-            <p class="price">ON</p>
-            <ul class="description">
-              <li>NO TE QUEDES AFUERA</li>
-              <li>DEL MOVIMIENTO</li>
-              <li>𓂀LA ORDEN𓂀</li>
-            </ul>
-          </div>
-          <div class="back">
-            <h3>DISCORD</h3>
-            <p></p>
-            <a href="index.html">Suscribirse</a>
-          </div>
-        </div>
+    <!-- Galería de Artistas -->
+    <section class="galeria">
+      <h2>Artistas Destacados</h2>
+      <div class="galeria-grid">
+        <img src="templates/2.png" alt="Artista 1">
+        <img src="templates/FOTO 1 KNDY.png" alt="Artista 2">
+        <img src="templates/logo.png" alt="Artista 3">
       </div>
-<br>
-<br>
-<br>
+    </section>
+
+    <!-- Sección de Video -->
+    <section class="video-section">
+      <h2>Último Videoclip</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/uvkinIXPFTE?autoplay=1&mute=1&loop=1&playlist=uvkinIXPFTE&controls=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Acerca del sello -->
+    <section class="about">
+      <h2>𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀</h2>
+      <p>
+𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀𓂀
+      </p>
+      <a href="#contacto" class="btn">Contactanos</a>
+    </section>
+
+    <!-- Enlaces -->
+    <section class="links">
+      <h2>Seguinos</h2>
+      <div class="links-grid">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <a href="https://spotify.com" target="_blank">Spotify</a>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
 </body>
 </html>
+
 
